@@ -1,0 +1,5 @@
+a = int(input(""))
+b = int(input(""))
+c = int(input(""))
+d=(a**c+b**c)**(a*b)
+print(d)
