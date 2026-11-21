@@ -1,11 +1,8 @@
-stoimost_kvartiri = int(input(""))
-prosent_godovix = int(input(""))
-pervo_vsnos = int(input(""))
-ejegodniy_vsnos = int(input(""))
-kredit = stoimost_kvartiri - pervo_vsnos
-perviy_god = int((kredit - ejegodniy_vsnos) *(1+ prosent_godovix/100))
-vtoroy_god =int((perviy_god - ejegodniy_vsnos) *(1+ prosent_godovix/100))
-tretiy_god = int((vtoroy_god - ejegodniy_vsnos) *(1+ prosent_godovix/100))
-print(perviy_god)
-print(vtoroy_god)
-print(tretiy_god)
+from decimal import Decimal, getcontext
+
+getcontext().prec = 60
+
+a = Decimal(input())
+b = Decimal(input())
+formula = a.sqrt() + b
+print(formula)
