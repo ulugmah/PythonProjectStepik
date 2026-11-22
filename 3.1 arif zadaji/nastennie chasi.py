@@ -1,3 +1,4 @@
+# настенные часы
 time_mins = int(input())
 start_hours = int(input())
 start_mins = int(input())

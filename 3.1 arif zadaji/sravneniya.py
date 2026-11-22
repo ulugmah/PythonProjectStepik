@@ -1,3 +1,4 @@
+#сравнение float и demecal
 from decimal import Decimal
 import time
 

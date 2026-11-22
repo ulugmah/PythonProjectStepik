@@ -1,8 +1,19 @@
-mins = int(input(""))
-sekund = int(input(""))
-days = int(input(""))
-obshaya_sekunda = (mins*60+sekund) * days
-chasi = int(obshaya_sekunda / 60 // 60)
-sekund = obshaya_sekunda % 60
-minuta = obshaya_sekunda // 60 % 60
-print(chasi,minuta,sekund)
+
+# На вход вашему серверу пришло время в минутах, которое провел пользователь на сайте , а также время начала сессии.
+# Вам нужно определить сколько времени было на цифровых часах у пользователя, когда он закрывал сайт.
+# Ваша программа получает на вход 3 переменные, каждая в новой строке:
+#
+# time_mins – количество минут, которое пользователь провел на сайте
+# start_hours – время в часах, когда пользователь зашел на сайт
+# start_mins – время в минутах, когда пользователь зашел на сайт
+# Программа должна вывести через пробел количество часов и минут, когда пользователь закрыл сайт
+time_mins = int(input())
+start_hours = int(input())
+start_mins = int(input())
+
+total_mins = start_hours * 60 + start_mins + time_mins
+
+hours = (total_mins // 60) % 24
+minutes = total_mins % 60
+
+print(hours, minutes)
