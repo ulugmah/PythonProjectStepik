@@ -1,3 +1,13 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+# Игнорировать системные файлы Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Игнорировать настройки сред разработки (PyCharm/VSCode)
+.idea/
+.vscode/
+*.iml
+
+# Игнорировать виртуальные окружения
+venv/
+env/
